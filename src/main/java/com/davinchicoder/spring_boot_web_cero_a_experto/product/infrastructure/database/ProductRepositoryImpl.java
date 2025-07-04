@@ -1,7 +1,7 @@
 package com.davinchicoder.spring_boot_web_cero_a_experto.product.infrastructure.database;
 
-import com.davinchicoder.spring_boot_web_cero_a_experto.product.domain.Product;
-import com.davinchicoder.spring_boot_web_cero_a_experto.product.domain.ProductRepository;
+import com.davinchicoder.spring_boot_web_cero_a_experto.product.domain.entity.Product;
+import com.davinchicoder.spring_boot_web_cero_a_experto.product.domain.port.ProductRepository;
 import com.davinchicoder.spring_boot_web_cero_a_experto.product.infrastructure.database.entity.ProductEntity;
 import com.davinchicoder.spring_boot_web_cero_a_experto.product.infrastructure.database.mapper.ProductEntityMapper;
 import lombok.RequiredArgsConstructor;

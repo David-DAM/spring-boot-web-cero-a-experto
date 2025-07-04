@@ -1,8 +1,8 @@
 package com.davinchicoder.spring_boot_web_cero_a_experto.product.application.command.create;
 
 import com.davinchicoder.spring_boot_web_cero_a_experto.common.mediator.RequestHandler;
-import com.davinchicoder.spring_boot_web_cero_a_experto.product.domain.Product;
-import com.davinchicoder.spring_boot_web_cero_a_experto.product.domain.ProductRepository;
+import com.davinchicoder.spring_boot_web_cero_a_experto.product.domain.entity.Product;
+import com.davinchicoder.spring_boot_web_cero_a_experto.product.domain.port.ProductRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 

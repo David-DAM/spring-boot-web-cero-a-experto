@@ -10,6 +10,7 @@ import com.davinchicoder.spring_boot_web_cero_a_experto.product.application.quer
 import com.davinchicoder.spring_boot_web_cero_a_experto.product.application.query.getById.GetProductByIdResponse;
 import com.davinchicoder.spring_boot_web_cero_a_experto.product.infrastructure.api.dto.ProductDto;
 import com.davinchicoder.spring_boot_web_cero_a_experto.product.infrastructure.api.mapper.ProductMapper;
+import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -47,7 +48,7 @@ public class ProductController implements ProductApi {
     }
 
     @PostMapping("")
-    public ResponseEntity<Void> saveProduct(@RequestBody ProductDto productDto) {
+    public ResponseEntity<Void> saveProduct(@RequestBody @Valid ProductDto productDto) {
 
         CreateProductRequest request = productMapper.mapToCreateProductRequest(productDto);
 
@@ -57,7 +58,7 @@ public class ProductController implements ProductApi {
     }
 
     @PutMapping("")
-    public ResponseEntity<Void> updateProduct(@RequestBody ProductDto productDto) {
+    public ResponseEntity<Void> updateProduct(@RequestBody @Valid ProductDto productDto) {
 
         UpdateProductRequest request = productMapper.mapToUpdateProductRequest(productDto);
 
