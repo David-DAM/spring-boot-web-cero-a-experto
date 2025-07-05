@@ -1,5 +1,6 @@
 package com.davinchicoder.spring_boot_web_cero_a_experto.common.mediator;
 
+import org.springframework.scheduling.annotation.Async;
 import org.springframework.stereotype.Component;
 
 import java.util.List;
@@ -23,5 +24,11 @@ public class Mediator {
         }
         return handler.handle(request);
     }
+
+    @Async
+    public <R, T extends Request<R>> void dispatchAsync(T request) {
+        this.dispatch(request);
+    }
+
 
 }
