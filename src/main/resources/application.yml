@@ -1,4 +1,8 @@
 spring:
   application:
     name: spring-boot-web-cero-a-experto
+  servlet:
+    multipart:
+      max-request-size: 10MB
+      max-file-size: 1MB
 
