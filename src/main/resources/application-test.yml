@@ -1,0 +1,25 @@
+spring:
+  servlet:
+    multipart:
+      max-request-size: 10MB
+      max-file-size: 1MB
+  cache:
+    type: simple
+
+springdoc:
+  swagger-ui:
+    path: /swagger-ui.html
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+  endpoint:
+    health:
+      show-details: always
+  metrics:
+    distribution:
+      percentiles-histogram:
+        http.server:
+          requests: true
