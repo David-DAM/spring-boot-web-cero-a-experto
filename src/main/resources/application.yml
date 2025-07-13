@@ -8,3 +8,6 @@ spring:
   cache:
     type: simple
 
+springdoc:
+  swagger-ui:
+    path: /swagger-ui.html
